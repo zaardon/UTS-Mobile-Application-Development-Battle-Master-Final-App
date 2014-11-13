@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+
+    <Button
+        android:id="@+id/createCharacter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_new_character"
+    />
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/createCharacter"
+        android:gravity="center_vertical|center_horizontal"
+        
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/createCharacter"
+        android:id="@id/android:empty"
+        android:text="@string/no_characters_in_list"
+        android:gravity="center_vertical|center_horizontal"
+        />
+    
+</RelativeLayout>

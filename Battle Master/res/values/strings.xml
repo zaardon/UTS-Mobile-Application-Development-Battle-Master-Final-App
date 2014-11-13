@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Battle Master V1.0</string>
+    <string-array name="class_list">
+        <item>Paladin</item>
+		<item>Warrior</item>
+		<item>Druid</item>
+		<item>Mage</item>
+		<item>Cleric</item>
+    </string-array>
+	<string name="ok_txt">Ok</string>
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Battle.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to </string>
+    <string name="title_not_connected">not connected</string>
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="create_character">Create Character</string>
+    <string name="minion_name">Minion Name:</string>
+    <string name="race">Race</string>
+    <string name="level">Level:</string>
+    <string name="hp">HP:</string>
+    <string name="gold_loot">Gold Loot</string>
+    <string name="randomisation_buttons">Randomisation Buttons</string>
+    <string name="name">Name</string>
+    <string name="level_hp">Level + HP</string>
+    <string name="high_gold">High Gold</string>
+    <string name="medium_gold">Medium Gold</string>
+    <string name="low_gold">Low Gold</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_minion">Create Minion</string>
+    <string name="class_type_">Class Type:</string>
+    <string name="character_name_">Character Name:</string>
+    <string name="gender_">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="level_">Level:</string>
+    <string name="description">Description:</string>
+    <string name="gold_pieces">Gold pieces:</string>
+    <string name="please_select">Please select what mode you would like</string>
+    <string name="dm_mode">DM Mode</string>
+    <string name="player_mode">Player Mode</string>
+    <string name="create_new_character">Create new character</string>
+    <string name="no_characters_in_list">No Characters in List</string>
+    <string name="create_new_minion">Create new minion</string>
+    <string name="choose_your_dice_to_roll_and_shake">Choose your dice to roll and shake!</string>
+    <string name="paired_devices">Paired devices</string>
+    <string name="find_devices">Find devices</string>
+    <string name="attack">Attack</string>
+    <string name="heal">Heal</string>
+    <string name="send_character_and_begin_play_">Send character and begin play!</string>
+    <string name="make_discoverable">Make Discoverable</string>
+    <string name="connect_to_a_device">Connect to a device</string>
+</resources>

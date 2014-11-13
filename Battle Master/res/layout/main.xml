@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_select"
+        android:layout_marginLeft="25sp" />
+    
+    <Button 
+        android:id="@+id/DMButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dm_mode"
+        android:layout_below="@id/title"
+        android:layout_marginTop="100sp"
+        />
+
+        <Button 
+        android:id="@+id/PlayerButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/player_mode"
+        android:layout_below="@id/DMButton"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="50sp"
+        />
+        
+           <ImageView 
+        android:id="@+id/dice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice" 
+        android:layout_below="@id/PlayerButton"
+         
+		/>
+
+</RelativeLayout>

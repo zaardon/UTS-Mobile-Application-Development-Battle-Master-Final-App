@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TableLayout
+        android:id="@+id/character_view"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="200sp"
+        >
+        <TableRow android:layout_marginLeft="70sp">
+        <TextView android:id="@+id/bt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#58ACFA"
+        />
+        </TableRow>
+        
+        
+        <TableRow android:layout_marginLeft="70sp">
+        <TextView android:id="@+id/bt_level"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#58ACFA"
+        />
+        </TableRow>       
+        
+        <TableRow
+            android:layout_marginLeft="70sp"
+            >
+        <TextView android:id="@+id/bt_current_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#01DFA5"
+        />
+        <TextView android:id="@+id/bt_current_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#01DFA5"
+        />
+        <TextView android:id="@+id/bt_current_max"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#01DFA5"
+        />
+        </TableRow>
+        
+        <TableRow android:layout_marginLeft="115sp">
+        <ImageView 
+        android:id="@+id/knight"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/knight"          
+		/>
+            
+        </TableRow>
+
+        
+        <TableRow
+            android:layout_marginTop="5sp" 
+            android:layout_marginLeft="70sp">
+        
+            <TextView android:id="@+id/enemy_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textColor="#FF0040"
+      		/> 
+            
+        </TableRow>      
+
+        <TableRow android:layout_marginLeft="70sp">
+        <TextView android:id="@+id/enemy_level"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textColor="#FF0040"
+        />
+        </TableRow>          
+        
+        <TableRow
+            android:layout_marginLeft="70sp"
+            >
+        <TextView android:id="@+id/enemy_current_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textColor="#FF8000"
+        />
+        <TextView android:id="@+id/enemy_current_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textColor="#FF8000"
+        />
+        <TextView android:id="@+id/enemy_current_max"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textColor="#FF8000"
+        />
+        </TableRow>
+        <TableRow android:layout_marginLeft="115sp">
+        <ImageView 
+        android:id="@+id/skeleton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/skeleton"  
+        android:visibility="invisible"         
+		/>
+            
+        </TableRow>
+   
+    </TableLayout>
+    
+    <TableLayout 
+        android:id="@+id/bluetooth_game_buttons"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/character_view"
+        >
+     <TableRow 
+         android:layout_marginLeft="50sp"
+         >
+         <ImageView 
+           android:id="@+id/sword_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sword"  
+        android:visibility="invisible"         
+		/>
+        <Button android:id="@+id/attack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attack"
+            android:visibility="invisible"
+        />
+        
+        <EditText android:id="@+id/damage_amount"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:inputType="number"
+        />
+        
+       
+            
+       </TableRow>
+       
+       <TableRow
+           android:layout_marginLeft="50sp"
+           >
+           <ImageView 
+            android:id="@+id/health_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/health" 
+        android:visibility="invisible"          
+		/>
+        <Button android:id="@+id/heal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heal"
+            android:visibility="invisible"
+        />
+        
+        <EditText android:id="@+id/heal_amount"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:inputType="number"
+        />
+        
+        
+        </TableRow>
+        
+       <TableRow
+           android:layout_marginLeft="125sp"
+           >
+           
+        <ImageView 
+        android:id="@+id/roll_dice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice2"  
+        android:visibility="invisible"       
+		/>
+
+        </TableRow>  
+        <TableRow >
+            <TextView 
+                 android:id="@+id/battle_label"
+           		 android:layout_width="wrap_content"
+           		 android:layout_height="wrap_content"
+          		  android:visibility="invisible"
+                
+                />
+            <TextView 
+                android:id="@+id/battle_text"
+           		 android:layout_width="wrap_content"
+           		 android:layout_height="wrap_content"
+          		  android:visibility="invisible"
+                />
+            
+        </TableRow>      
+       
+    </TableLayout>
+    
+    <TableLayout        
+        android:id="@+id/bluetooth_buttons"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/character_view"
+        >
+       
+
+        
+        
+    </TableLayout>
+    
+    
+<LinearLayout
+        android:layout_below="@id/bluetooth_game_buttons"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ListView android:id="@+id/in"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_weight="1"
+    />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button android:id="@+id/button_send"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_character_and_begin_play_"
+        />
+    </LinearLayout>
+</LinearLayout>
+    
+</RelativeLayout>

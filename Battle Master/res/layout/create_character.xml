@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1"
+    android:background="#FFFFFF">   
+
+    <TextView
+       		 android:layout_width="fill_parent"
+       		 android:layout_height="wrap_content"
+       		 android:text="@string/create_character" 
+       		 android:textSize="22sp"
+       		 android:gravity="top"
+       		 android:id="@+id/tasks_title"
+       		 android:layout_alignParentTop="true"
+       		 android:textColor="#000000"
+       		 />   
+    
+    <TableLayout 
+        android:id="@+id/table"
+  	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns="1"
+    	android:layout_below="@id/tasks_title">
+
+	  <TableRow >
+    	<TextView
+       		 android:layout_width="fill_parent"
+       		 android:layout_height="wrap_content"
+       		 android:text="@string/class_type_"
+       		 android:textColor="#000000"
+      	 />
+
+	    <Spinner
+	        android:id="@+id/class_name"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:prompt="@array/class_list"
+        	android:textColor="#000000"
+        />
+   
+    
+	</TableRow>  	
+	
+	<TableRow >
+	    
+    	<TextView
+       		 android:layout_width="fill_parent"
+       		 android:layout_height="wrap_content"
+       		 android:text="@string/character_name_"
+       		 android:textColor="#000000"
+      	 />
+    	<EditText
+      		  android:id="@+id/character_name"
+      		  android:layout_width="wrap_content"
+      		  android:layout_height="wrap_content"
+         />   
+    
+	</TableRow>
+
+
+	<TableRow>
+	        <TextView
+       		 android:layout_width="fill_parent"
+       		 android:layout_height="wrap_content"
+       		 android:text="@string/gender_"
+       		 android:textColor="#000000"
+       		 />
+
+	    <RadioGroup
+	        android:id="@+id/gender"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        
+	        <RadioButton
+	            android:id="@+id/male"
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/male"
+    			android:textColor="#000000" 
+    			android:paddingLeft="16pt"/>
+	        
+	        <RadioButton
+	            android:id="@+id/female"
+	            android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:text="@string/female" 
+    			android:textColor="#000000"
+    			android:paddingLeft="16pt"/>
+	        
+	    </RadioGroup>
+        	        
+	</TableRow>
+
+
+	
+	<TableRow>
+	    <TextView
+      	    android:layout_width="fill_parent"
+     	    android:layout_height="wrap_content"
+    	    android:text="@string/level"
+    	    android:textColor="#000000"
+    	    
+        />
+	    <EditText
+      		  android:id="@+id/level"
+      		  android:layout_width="wrap_content"
+      		  android:layout_height="wrap_content"
+      		  android:inputType="number"
+         /> 
+	        
+	</TableRow>
+	
+	<TableRow>
+	    <TextView
+      	    android:layout_width="fill_parent"
+     	    android:layout_height="wrap_content"
+    	    android:text="@string/hp"
+    	    android:textColor="#000000"
+        />
+	    <EditText
+      		  android:id="@+id/max_hp"
+      		  android:layout_width="wrap_content"
+      		  android:layout_height="wrap_content"
+      		  android:inputType="number"
+         /> 
+	        
+	</TableRow>
+	
+	<TableRow>
+	    
+	    <TextView
+      	    android:layout_width="fill_parent"
+     	    android:layout_height="wrap_content"
+    	    android:text="@string/description"
+    	    android:textColor="#000000"
+        />
+	    <EditText
+      		  android:id="@+id/description"
+      		  android:layout_width="wrap_content"
+      		  android:layout_height="wrap_content"
+         /> 
+	        
+	</TableRow>
+	
+	<TableRow>
+	    
+	    <TextView
+      	    android:layout_width="fill_parent"
+     	    android:layout_height="wrap_content"
+    	    android:text="@string/gold_pieces"
+    	    android:textColor="#000000"
+        />
+	    <EditText
+      		  android:id="@+id/character_gold"
+      		  android:layout_width="wrap_content"
+      		  android:layout_height="wrap_content"
+      		  android:inputType="number"
+         /> 
+	        
+	</TableRow>
+	
+
+
+</TableLayout>
+
+
+
+    	<Button
+	    android:id="@+id/cancel_button"
+	    android:layout_width="120sp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom"
+	    android:text="@string/cancel" 
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:textColor="#CC0000"
+	    />
+
+    	<Button
+	    android:id="@+id/add_button"
+	    android:layout_width="120sp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="bottom"
+	    android:text="@string/create_character" 
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:textColor="#336600"
+	    />
+		
+</RelativeLayout>
+
+

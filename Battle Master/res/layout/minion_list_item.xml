@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<id11303563.asmith.dnd.views.MinionCharacterItem
+    
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    >   
+    
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	>
+	<TableRow>
+    <TextView
+        android:id="@+id/m_name"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"	
+    	android:textSize="19sp"	   	
+     />
+    </TableRow>
+    <TableRow>
+
+     <TextView
+        android:id="@+id/m_race"
+    	android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textSize="15sp"	
+   		android:paddingRight="10sp"		
+     /> 
+     </TableRow>  
+    
+    
+    <TableRow>     
+     <TextView
+        android:id="@+id/m_level"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+		android:textSize="15sp"	
+		android:paddingRight="10sp"
+     />
+     </TableRow>
+     
+    <TableRow>
+     <TextView
+        android:id="@+id/m_mhp"
+    	android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textSize="15sp"	
+   		android:paddingRight="10sp"		
+     /> 
+     </TableRow>   
+     
+     <TableRow>
+     <TextView
+        android:id="@+id/m_loot"
+    	android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textSize="15sp"	
+   		android:paddingRight="10sp"		
+     /> 
+     </TableRow>  
+     
+        <TableRow>  
+              <ImageView
+            android:id="@+id/cross"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentRight="true"
+    		android:clickable="true"
+   			android:src="@drawable/cross" 
+   			android:paddingLeft="290sp"            
+        />
+     </TableRow>   
+     
+		
+	</TableLayout>	
+     </RelativeLayout>
+
+</id11303563.asmith.dnd.views.MinionCharacterItem>
